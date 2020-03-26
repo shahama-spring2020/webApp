@@ -20,11 +20,11 @@ sleep 2
 
 #nohup python3 views.py >  /dev/null
 
-forever start -a -e error.log -a  -l loger.log -c python3 views.py
+forever start -a  -l loger.log -c python3 views.py
 
 sleep 2
 
-forever start -a -e error.log -a  -l loger.log -c python3 views.py
+forever start -a  -l loger.log -c python3 views.py
 #start cloudwatch####
 
 cd ../.forever
